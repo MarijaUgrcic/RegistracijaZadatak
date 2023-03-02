@@ -21,10 +21,10 @@ public class BaseTest {
         driver.get("https://demowebshop.tricentis.com/");
     }
 
-//    @AfterMethod
-//    public void tearDown() {
-//        driver.quit();
-//    }
+    @AfterMethod
+    public void tearDown() {
+        driver.quit();
+    }
 
     protected WebElement getElement(By locator) {
         return driver.findElement(locator);
